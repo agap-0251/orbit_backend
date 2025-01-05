@@ -1,0 +1,80 @@
+{
+	"info": {
+		"_postman_id": "a01263d8-7296-49b7-8239-ce4a04a369ee",
+		"name": "orbit-backend",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "29092712"
+	},
+	"item": [
+		{
+			"name": "Get user by id -> API 1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://orbit-backend-seu8.onrender.com/api/users/677ac3dd6436ef5e5e16c62f",
+					"protocol": "https",
+					"host": [
+						"orbit-backend-seu8",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"api",
+						"users",
+						"677ac3dd6436ef5e5e16c62f"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get transcations of user -> API 2",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://orbit-backend-seu8.onrender.com/api/transactions/677ac3dd6436ef5e5e16c62f?status=success&fromDate=2024-01-01&toDate=2024-12-31&type=debit",
+					"protocol": "https",
+					"host": [
+						"orbit-backend-seu8",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"api",
+						"transactions",
+						"677ac3dd6436ef5e5e16c62f"
+					],
+					"query": [
+						{
+							"key": "status",
+							"value": "success"
+						},
+						{
+							"key": "fromDate",
+							"value": "2024-01-01"
+						},
+						{
+							"key": "toDate",
+							"value": "2024-12-31"
+						},
+						{
+							"key": "type",
+							"value": "debit"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get all transacitions with user details -> API 3",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}
