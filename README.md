@@ -97,6 +97,8 @@ Before running the project, make sure you have the following installed:
 - **Node.js** (v14.x or above)
 - **MongoDB** (using MongoDB Atlas or a local MongoDB setup)
 
+Server is live at https://orbit-backend-seu8.onrender.com
+
 ### Steps to Set Up the Project Locally
 
 1. Clone the repository:
