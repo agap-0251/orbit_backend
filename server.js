@@ -19,6 +19,6 @@ app.use('/api/users',userRoutes)
 app.use('/api/transactions',transactionRoutes)
 
 // Start Server
-app.listen(process.env,PORT, () => {
+app.listen(process.env.PORT, () => {
   console.log(`Server running on ${PORT}`);
 });
