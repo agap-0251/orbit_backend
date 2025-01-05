@@ -1,3 +1,4 @@
+require('dotenv').config()
 const express = require('express')
 const mongoose = require('mongoose')
 const Transaction = require('./models/Transaction')
@@ -38,8 +39,8 @@ const fillValues =  async () => {
     }
   };
 
-  const MONGO_URI = 'mongodb://localhost:27017/';
-  mongoose.connect(MONGO_URI, {dbName : 'orbit-wallet'})
+  // const MONGO_URI = 'mongodb://localhost:27017/';
+  mongoose.connect(process.env.MONGO_URI)
     .then(() => {
       console.log('MongoDB connected')
       fillValues();
